@@ -1,0 +1,10 @@
+1. Add a private key called id_rsa to main folder which has access to all hosts you want it to run on.
+2. Add all hosts you want to visit to hosts.txt.
+- These have to be either private ips or public ones. Comment/Uncomment the necessary lines at line 213/214 in collector.sh depending if you use public or private ips.
+3. To configure the number of hosts visited by the collector, edit line 249 in collector.sh, or comment it out. If commented out it will run the double of the number of ip addresses you have put in hosts.txt
+4. If wanted to change what telegraf records, this can be done in the telegraf.conf file. You would then also need to change the different queries in the collector script.  
+5. To run the collector run it from the main folder with ./collector.sh
+
+If wanting to change the value of lamda, this can be changed in the LA_with_barrier script, on line 20. 
+Scripts used to generate memory usage during tests and logging script lies in 'Scripts for testing' folder.
+Files used to record assorted information concering calculations, timestamp and more, lies in the bin folder.
