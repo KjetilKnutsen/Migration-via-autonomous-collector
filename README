@@ -1,6 +1,8 @@
+# README
+
 1. Add a private key called id_rsa to main folder which has access to all hosts you want it to run on.
 2. Add all hosts you want to visit to hosts.txt.
-- These have to be either private ips or public ones. Comment/Uncomment the necessary lines at line 213/214 in collector.sh depending if you use public or private ips.
+   - These have to be either private ips or public ones. Comment/Uncomment the    necessary lines at line 213/214 in collector.sh depending if you use public or private ips.
 3. To configure the number of hosts visited by the collector, edit line 249 in collector.sh, or comment it out. If commented out it will run the double of the number of ip addresses you have put in hosts.txt
 4. If wanted to change what telegraf records, this can be done in the telegraf.conf file. You would then also need to change the different queries in the collector script.  
 5. To run the collector run it from the main folder with ./collector.sh
